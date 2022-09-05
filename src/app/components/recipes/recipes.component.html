@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<app-searchbar></app-searchbar>
+<br>
+<div id='clearing'>
+	<h1 id='cuisine'>Chinese</h1>
+	<div *ngFor="let item of chineseRecipes" [routerLink]="['/procedure']" (click)="storeRecipe(item.name)" name='selectRecipeDiv'>
+		<img src={{item.path}} height="250px" width="257.5px">
+		<p>⏰ {{item.duration}} mins</p>
+		<h1>{{item.name}}</h1>
+	</div>
+	<br><br>
+	
+	<h1 id='cuisine'>Indian</h1>
+	<div *ngFor="let item of indianRecipes" [routerLink]="['/procedure']" (click)="storeRecipe(item.name)" name='selectRecipeDiv'>
+		<img src={{item.path}} height="250px" width="257.5px">
+		<p>⏰ {{item.duration}} mins</p>
+		<h1>{{item.name}}</h1>
+	</div>
+</div>

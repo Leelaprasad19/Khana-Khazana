@@ -1,0 +1,18 @@
+<br>
+<div>
+	<input name='search' type="text" placeholder="Search here.." [(ngModel)]="searched">
+	<button name='searchButton' (click)='getIngredients()'><img src="assets/Images/Icons/search.png" height="33px" width="33px"></button>
+<div>
+
+<br>
+
+<div id="soln" *ngIf="flag==1">
+	<h1 id='cuisine'>Your Search</h1>
+	<h2 *ngIf="lengthFlag==1">No recipes Found</h2>
+	<div name='selectRecipe' *ngFor="let item of myRecipes"  [routerLink]="['/procedure']" (click)="storeRecipe(item.name)">
+		<img src={{item.path}} height="250px" width="257.5px">
+		<p>⏰ {{item.duration}} mins</p>
+		<h1>{{item.name}}</h1>
+	</div>
+	<br><br>
+</div>

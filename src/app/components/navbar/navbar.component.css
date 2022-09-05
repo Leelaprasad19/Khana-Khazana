@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+}
+nav{
+	border-bottom: 3px solid green;
+	padding: 10px;
+	text-align: right;
+}
+#float-left{
+	float: left;
+}
+.brand-name{
+	margin-top: 1px;
+	margin-left: 10px;
+}
+#logout{
+	margin-left: 200px;
+	font-weight: bold;
+	color: lightseagreen;
+}
+#logout:hover{
+	text-decoration: underline;
+}
+img{
+	margin-top: -5px;
+	border-radius: 10px;
+}
+input{
+	margin-top: 10px;
+	font-size: 1.2em;
+	border: 0px;
+	background: transparent;
+	margin-right: 55px;
+	color: black;
+	font-weight: bold;
+}
+input:hover,input:focus,input:active{
+	color: red;
+	text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+*{
+	box-sizing: border-box;
+	color: whitesmoke;
+}
+#container{
+	height: 750px;
+	margin: -1%;
+	background-image:url('../../../assets/Images/Login/background-5.webp');
+	background-position: center;
+	background-size: 100%; 
+}
+#login{
+	text-align: center;
+	width: 25%;
+	height: 40%;
+
+	margin-left: 36%;
+	margin-top: 18%;
+
+
+	background: rgba( 255, 255, 255, 0.2);
+	backdrop-filter: blur( 0px );
+	-webkit-backdrop-filter: blur( 0px );
+	border-radius: 10px;
+}
+input[type=text],input[type=password],input[type=text]:focus,input[type=password]:focus,
+input[type=email],input[type=email]:focus{
+	text-align: left;
+	outline: none;
+	border: 0px;
+	color: inherit;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	width: 80%;
+	border-radius: 5px;
+}
+input[type=button],input[type=button]:focus{
+	padding: 8px;
+	outline: none;
+	width: 80%;
+	border-radius: 5px;
+	border: 0px;
+	background-color: green;
+	font-size: 0.8em;
+	color: inherit;
+
+	transition: transform .2s;
+}
+input[type=button]:hover{
+	animation: blinker 1s linear infinite;
+}
+input::placeholder {
+	font-size: 1.2em;
+  	color: white;
+  	opacity: 0.5;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
